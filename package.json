@@ -1,0 +1,17 @@
+{
+  "name": "Higher order functions & loops",
+  "version": "1.0.0",
+  "description": "Exercises for higher order functions and loops",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test-verbose": "vitest --reporter=verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}
