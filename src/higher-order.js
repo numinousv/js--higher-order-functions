@@ -4,45 +4,31 @@ import { personArray, emojiArray } from "./data.js";
 // med undantag för "getObjectFromArray" nederst som redan är en funktion
 
 //personArray
-export const namesOnly = personArray.map((item) => item.name);
-export const agesOnly = personArray.map((item) => item.age);
-export const withoutJim = personArray.filter((item) => item.name !== "Jim");
-export const combinedAge = personArray.reduce((acc, item) => acc + item.age, 0);
-export const findJane = personArray.find((item) => item.name === "Jane");
+export const namesOnly;
+export const agesOnly;
+export const withoutJim;
+export const combinedAge;
+export const findJane;
 
-export const sortedByAgeFromYoungestToOldest = [...personArray].sort(
-  (a, b) => a.age - b.age
-);
-export const namesByAgeFromOldestToYoungest = [...personArray]
-  .sort((a, b) => b.age - a.age)
-  .map((item) => item.name);
-export const everyoneOver12 = personArray.every((item) => item.age > 12);
-export const isAnyoneOver13 = personArray.some((item) => item.age > 13);
+export const sortedByAgeFromYoungestToOldest;
+export const namesByAgeFromOldestToYoungest;
+export const everyoneOver12;
+export const isAnyoneOver13;
 
-export const indexOfMaybe = personArray.findIndex(
-  (item) => item.city === "Maybe"
-);
-export const namesByLastLetter = personArray.reduce((acc, item) => {
-  const lastLetter = item.name.charAt(item.name.length - 1);
-  acc.push(lastLetter);
-  return acc;
-}, []);
+export const indexOfMaybe;
+export const namesByLastLetter;
 
 /* ---------------------------------- */
 
 // emojiArray
-export const arrayIncludesSquirel = emojiArray.includes("🐿️");
-export const indexOfRocket = emojiArray.indexOf("🚀");
+export const arrayIncludesSquirel;
+export const indexOfRocket;
 
 /* ---------------------------------- */
 
 // ska skapa ett objekt innehållande objekten i personArray
 const getObjectFromArray = () => {
   const newObject = {};
-
-  personArray.forEach((item) => {
-    newObject[item.name.toLowerCase()] = item;
-  });
   return newObject;
 };
 
